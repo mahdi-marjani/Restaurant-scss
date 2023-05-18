@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Vazirmatn, sans-serif;
+}
+
+$color-dark: #262626;
+$color-light: #fff;
+$color-primary: #008600;
+$color-info: #767676;
+$color-secondary: #4969f5;
+$color-instagram: #dd0d80;
+$color-telegram: #33a8db;
+$color-twitter: #179cf0;
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gridCenter() {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+@mixin food-img($n: "", $w: "", $t: "", $r: "", $b: "", $l: "", $d: "") {
+  img#food#{$n} {
+    @if ($w != "") {
+      width: $w;
+    }
+    @if ($t != "") {
+      top: $t;
+    }
+    @if ($r != "") {
+      right: $r;
+    }
+    @if ($b != "") {
+      bottom: $b;
+    }
+    @if ($l != "") {
+      left: $l;
+    }
+    @if ($d != "") {
+      display: $d;
+    }
+  }
+}

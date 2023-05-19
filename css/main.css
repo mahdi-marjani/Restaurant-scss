@@ -183,7 +183,7 @@ div.list-footer {
 .main {
   width: 100%;
   height: fit-content;
-  background: linear-gradient(45deg, rgba(0, 134, 0, 0.4), rgba(0, 134, 0, 0.6)); }
+  background: linear-gradient(45deg, rgba(73, 105, 245, 0.4), rgba(0, 134, 0, 0.4)); }
   .main-content ul.food-menu {
     width: 97%;
     margin: 0 auto;
